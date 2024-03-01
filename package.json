@@ -1,0 +1,26 @@
+{
+  "name": "Peter-Fell-Project",
+  "version": "1.0.0",
+  "description": "<center><img src =\"https://www.peterfell.co.nz/wp-content/uploads/PeterFell-Logo-1.png\">",
+  "main": "tailwind.config.js",
+  "dependencies": {
+    "tailwindcss": "^3.4.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx tailwindcss -i ./input.css -o ./style.css --watch",
+    "build": "npx tailwindcss -i ./input.css -o ./style.css --minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shimono13/Peter-Fell-Project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shimono13/Peter-Fell-Project/issues"
+  },
+  "homepage": "https://github.com/Shimono13/Peter-Fell-Project#readme"
+}

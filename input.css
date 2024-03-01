@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url("./components/fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf")
+    format("truetype");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url("./components/fonts/PlayfairDisplay-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url("./components/fonts/PlayfairDisplay-Medium.ttf") format("truetype");
+  font-weight: 500; /* "Medium" potrebbe corrispondere a 500 */
+}
+
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url("./components/fonts/PlayfairDisplay-ExtraBold.ttf")
+    format("truetype");
+  font-weight: 800; /* Ad esempio, "ExtraBold" potrebbe corrispondere a 800 */
+}
+
+@font-face {
+  font-family: "Heebo";
+  src: url("./components/fonts/Heebo-Light.ttf") format("truetype");
+  font-weight: 300; /* Peso "light" */
+}
+
+@font-face {
+  font-family: "Heebo";
+  src: url("./components/fonts/Heebo-Regular.ttf") format("truetype");
+  font-weight: normal; /* Peso "regular" (normale) */
+}
+
+h1,
+h2,
+h3 {
+  font-family: "PlayfairDisplay", sans-serif;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+p {
+  font-family: "heebo", sans-serif;
+  font-weight: 300;
+}
