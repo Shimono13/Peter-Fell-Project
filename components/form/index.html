@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="../../style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div>
+      <form method="post" class="max-w-80 m-1">
+        <div class="flex flex-col gap-4">
+          <div><h3>Your Details:</h3></div>
+          <div>
+            <input
+              class="border border-solid border-black w-full h-10 pl-2"
+              type="text"
+              alt="Nome"
+              placeholder="Your Name *"
+            />
+          </div>
+          <div>
+            <input
+              class="border border-solid border-black w-full h-10 pl-2"
+              type="tel"
+              alt="tel"
+              placeholder="Your Phone *"
+            />
+          </div>
+          <div>
+            <input
+              class="border border-solid border-black w-full h-10 pl-2"
+              type="email"
+              alt="email"
+              placeholder="Your Email *"
+            />
+          </div>
+        </div>
+        <div class="flex flex-col gap-4 mt-2">
+          <div><h3>Send samples to:</h3></div>
+          <div>
+            <input
+              class="border border-solid border-black w-full h-10 pl-2"
+              type="text"
+              alt="houseNumberAndStreet"
+              placeholder="House number and street name *"
+            />
+          </div>
+          <div>
+            <input
+              class="border border-solid border-black w-full h-10 pl-2"
+              type="text"
+              alt="OptionInput"
+              placeholder="Apartment, suite, unit, etc. (optional)"
+            />
+          </div>
+          <div class="flex gap-1">
+            <div>
+              <input
+                class="border border-solid border-black w-full h-10 pl-2"
+                type="text"
+                alt="Town"
+                placeholder="Tow/City *"
+              />
+            </div>
+            <div>
+              <input
+                class="border border-solid border-black w-full h-10 pl-2"
+                type="text"
+                alt="Region"
+                placeholder="Region *"
+              />
+            </div>
+            <div>
+              <input
+                class="border border-solid border-black w-full h-10 pl-2"
+                type="text"
+                alt="Postcode"
+                placeholder="Postcode *"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-4 mt-2">
+          <div><h3>Email this report to:</h3></div>
+          <input
+            class="border border-solid border-black w-full h-10 pl-2"
+            type="name"
+            alt="name"
+            placeholder="Name *"
+          />
+          <input
+            class="border border-solid border-black w-full h-10 pl-2"
+            type="email"
+            alt="email"
+            placeholder="Email *"
+          />
+          <textarea
+            class="border border-solid border-black w-full h-24 pl-2"
+            placeholder="Message *"
+          ></textarea>
+          <div>
+            <button
+              type="button"
+              class="bg-bluePeterfell px-8 py-4 place-content-center text-white font-bold"
+            >
+              Send
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
