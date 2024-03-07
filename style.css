@@ -649,6 +649,30 @@ video {
   height: 9rem;
 }
 
+.h-16 {
+  height: 4rem;
+}
+
+.h-14 {
+  height: 3.5rem;
+}
+
+.h-\[30px\] {
+  height: 30px;
+}
+
+.h-\[40px\] {
+  height: 40px;
+}
+
+.h-\[45px\] {
+  height: 45px;
+}
+
+.h-\[50px\] {
+  height: 50px;
+}
+
 .w-full {
   width: 100%;
 }
@@ -997,6 +1021,11 @@ p {
 
   .md\:justify-normal {
     justify-content: normal;
+  }
+
+  .md\:bg-white {
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   }
 
   .md\:opacity-55 {
