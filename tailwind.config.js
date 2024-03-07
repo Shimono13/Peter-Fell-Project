@@ -4,9 +4,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        peterfell: {
-          DEFAULT: "#7a99ac",
-        },
+        blueButtonPeterfell: "#7A99AC",
+        rosePeterfell: "#CF9294",
+        orangeLightPeterfell: "#C17042",
+        bluePeterfell: "#5A87AC",
+        greenPeterfell: "#788C50",
+        yellowPeterfell: "#CF9C42",
+        greenLightPeterfell: "#A49A51",
+        orangePeterfell: "#B65838",
       },
     },
   },
