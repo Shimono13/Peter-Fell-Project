@@ -12,6 +12,8 @@ module.exports = {
         yellowPeterfell: "#CF9C42",
         greenLightPeterfell: "#A49A51",
         orangePeterfell: "#B65838",
+        grayPeterfell: "#797A7B",
+        grayTextPeterfell: "#6D6E70",
       },
     },
   },
