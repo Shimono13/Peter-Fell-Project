@@ -639,6 +639,10 @@ video {
   margin-top: 1rem;
 }
 
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -900,6 +904,14 @@ video {
   gap: 2.75rem;
 }
 
+.gap-32 {
+  gap: 8rem;
+}
+
+.gap-16 {
+  gap: 4rem;
+}
+
 .gap-y-10 {
   row-gap: 2.5rem;
 }
@@ -922,6 +934,10 @@ video {
 
 .border-b-4 {
   border-bottom-width: 4px;
+}
+
+.border-t-2 {
+  border-top-width: 2px;
 }
 
 .border-solid {
@@ -950,6 +966,11 @@ video {
 
 .border-transparent {
   border-color: transparent;
+}
+
+.border-gray-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(107 114 128 / var(--tw-border-opacity));
 }
 
 .border-b-blueButtonPeterfell {
