@@ -603,6 +603,10 @@ video {
   margin-bottom: 0.75rem;
 }
 
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
 .ml-2 {
   margin-left: 0.5rem;
 }
@@ -639,16 +643,20 @@ video {
   margin-top: 1rem;
 }
 
-.mb-4 {
-  margin-bottom: 1rem;
-}
-
 .inline-block {
   display: inline-block;
 }
 
+.inline {
+  display: inline;
+}
+
 .flex {
   display: flex;
+}
+
+.inline-flex {
+  display: inline-flex;
 }
 
 .grid {
@@ -675,8 +683,8 @@ video {
   height: 100%;
 }
 
-.h-96 {
-  height: 24rem;
+.w-11\/12 {
+  width: 91.666667%;
 }
 
 .w-20 {
@@ -687,80 +695,28 @@ video {
   width: 0.75rem;
 }
 
-.w-64 {
-  width: 16rem;
+.w-48 {
+  width: 12rem;
 }
 
-.w-80 {
-  width: 20rem;
+.w-6\/12 {
+  width: 50%;
+}
+
+.w-64 {
+  width: 16rem;
 }
 
 .w-\[18px\] {
   width: 18px;
 }
 
-.w-full {
-  width: 100%;
-}
-
-.w-8 {
-  width: 2rem;
-}
-
-.w-48 {
-  width: 12rem;
-}
-
 .w-auto {
   width: auto;
 }
 
-.w-10\/12 {
-  width: 83.333333%;
-}
-
-.w-11\/12 {
-  width: 91.666667%;
-}
-
-.w-\[20px\] {
-  width: 20px;
-}
-
-.w-\[50px\] {
-  width: 50px;
-}
-
-.w-36 {
-  width: 9rem;
-}
-
-.w-96 {
-  width: 24rem;
-}
-
-.w-1\/6 {
-  width: 16.666667%;
-}
-
-.w-2\/6 {
-  width: 33.333333%;
-}
-
-.w-5\/12 {
-  width: 41.666667%;
-}
-
-.w-4\/12 {
-  width: 33.333333%;
-}
-
-.w-3\/12 {
-  width: 25%;
-}
-
-.w-6\/12 {
-  width: 50%;
+.w-full {
+  width: 100%;
 }
 
 .min-w-10 {
@@ -781,10 +737,6 @@ video {
 
 .max-w-24 {
   max-width: 6rem;
-}
-
-.max-w-5 {
-  max-width: 1.25rem;
 }
 
 .max-w-6 {
@@ -823,11 +775,6 @@ video {
   cursor: pointer;
 }
 
-.columns-1 {
-  -moz-columns: 1;
-       columns: 1;
-}
-
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -838,10 +785,6 @@ video {
 
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
-.grid-cols-1 {
-  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -876,8 +819,24 @@ video {
   justify-content: space-between;
 }
 
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-items-center {
+  justify-items: center;
+}
+
 .gap-1 {
   gap: 0.25rem;
+}
+
+.gap-11 {
+  gap: 2.75rem;
+}
+
+.gap-16 {
+  gap: 4rem;
 }
 
 .gap-2 {
@@ -896,24 +855,8 @@ video {
   gap: 1.5rem;
 }
 
-.gap-20 {
-  gap: 5rem;
-}
-
-.gap-11 {
-  gap: 2.75rem;
-}
-
-.gap-32 {
-  gap: 8rem;
-}
-
-.gap-16 {
-  gap: 4rem;
-}
-
-.gap-y-10 {
-  row-gap: 2.5rem;
+.gap-10 {
+  gap: 2.5rem;
 }
 
 .rounded-full {
@@ -959,6 +902,11 @@ video {
   border-color: rgb(90 135 172 / var(--tw-border-opacity));
 }
 
+.border-gray-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(107 114 128 / var(--tw-border-opacity));
+}
+
 .border-indigo-600 {
   --tw-border-opacity: 1;
   border-color: rgb(79 70 229 / var(--tw-border-opacity));
@@ -966,11 +914,6 @@ video {
 
 .border-transparent {
   border-color: transparent;
-}
-
-.border-gray-500 {
-  --tw-border-opacity: 1;
-  border-color: rgb(107 114 128 / var(--tw-border-opacity));
 }
 
 .border-b-blueButtonPeterfell {
@@ -1147,12 +1090,21 @@ video {
   line-height: 1rem;
 }
 
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
 
 .font-light {
   font-weight: 300;
+}
+
+.font-medium {
+  font-weight: 500;
 }
 
 .text-black {
@@ -1168,6 +1120,19 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-red-900 {
+  --tw-text-opacity: 1;
+  color: rgb(127 29 29 / var(--tw-text-opacity));
+}
+
+.underline {
+  text-decoration-line: underline;
+}
+
+.underline-offset-2 {
+  text-underline-offset: 2px;
 }
 
 .opacity-40 {
@@ -1303,6 +1268,21 @@ p {
 .hover\:border-zinc-300:hover {
   --tw-border-opacity: 1;
   border-color: rgb(212 212 216 / var(--tw-border-opacity));
+}
+
+.hover\:border-grayTextPeterfell:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(109 110 112 / var(--tw-border-opacity));
+}
+
+.hover\:border-gray-400:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(156 163 175 / var(--tw-border-opacity));
+}
+
+.hover\:border-gray-300:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(209 213 219 / var(--tw-border-opacity));
 }
 
 .hover\:bg-blueButtonPeterfell\/90:hover {
