@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="container"></div>
+    <!-- <div class="max-w-sm rounded overflow-hidden shadow-lg">
+      <img
+        class="w-full"
+        src="https://images.unsplash.com/photo-1707343848873-d6a834b5f9b9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="Sunset in the mountains" />
+      <div class="px-6 py-4">
+        <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+        <p class="text-gray-700 text-base">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus
+          quia, nulla! Maiores et perferendis eaque, exercitationem praesentium
+          nihil.
+        </p>
+      </div>
+      <div class="px-6 pt-4 pb-2">
+        <span
+          class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+          >#photography</span
+        >
+        <span
+          class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+          >#travel</span
+        >
+        <span
+          class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+          >#winter</span
+        >
+      </div> -->
+    <!-- </div> -->
+    <script>
+      const arr = [
+        {
+          url: "https://plus.unsplash.com/premium_photo-1710267557895-649a3e136973?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          titolo: "Prima carta",
+          descrizione: "Questa è la prima carta bla bla bla ecco a voi",
+        },
+
+        {
+          url: "https://images.unsplash.com/photo-1682687220063-4742bd7fd538?q=80&w=1975&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          titolo: "Seconda carta",
+          descrizione: "Questa è la seconda carta bla bla bla ecco a voi",
+        },
+
+        {
+          url: "https://images.unsplash.com/photo-1683009427692-8a28348b0965?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          titolo: "Terza carta",
+          descrizione: "Questa è la terza carta bla bla bla ecco a voi",
+        },
+      ];
+
+      arr.forEach((data) => {
+        creaCard(data);
+      });
+
+      function creaCard(data) {
+        const card = document.createElement("div");
+        card.className = "max-w-sm rounded overflow-hidden shadow-lg m-20";
+
+        const immagine = document.createElement("img");
+        immagine.src = data.url;
+        card.appendChild(immagine);
+
+        const innerDiv = document.createElement("div");
+        innerDiv.className = "px-6 py-4";
+        card.appendChild(innerDiv);
+
+        const anotherDiv = document.createElement("div");
+        anotherDiv.className = "font-bold text-xl mb-2";
+        anotherDiv.appendChild(document.createTextNode(data.titolo));
+        innerDiv.appendChild(anotherDiv);
+
+        const titolo = document.createElement("p");
+        titolo.className = "text-gray-700 text-base";
+        titolo.appendChild(document.createTextNode(data.descrizione));
+        innerDiv.appendChild(titolo);
+
+        document.getElementById("container").appendChild(card);
+      }
+    </script>
+  </body>
+</html>
