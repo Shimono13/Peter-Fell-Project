@@ -663,6 +663,10 @@ video {
   margin-bottom: 1.25rem;
 }
 
+.-mb-2 {
+  margin-bottom: -0.5rem;
+}
+
 .mb-10 {
   margin-bottom: 2.5rem;
 }
@@ -807,16 +811,16 @@ video {
   height: 100%;
 }
 
-.h-screen {
-  height: 100vh;
-}
-
 .min-h-96 {
   min-height: 24rem;
 }
 
 .w-1\/2 {
   width: 50%;
+}
+
+.w-10\/12 {
+  width: 83.333333%;
 }
 
 .w-11\/12 {
@@ -1031,6 +1035,12 @@ video {
   gap: 2rem;
 }
 
+.space-y-8 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -1063,20 +1073,16 @@ video {
   border-bottom-width: 4px;
 }
 
-.border-t-2 {
-  border-top-width: 2px;
-}
-
 .border-r {
   border-right-width: 1px;
 }
 
-.border-solid {
-  border-style: solid;
+.border-t-2 {
+  border-top-width: 2px;
 }
 
-.border-none {
-  border-style: none;
+.border-solid {
+  border-style: solid;
 }
 
 .border-black {
@@ -1131,11 +1137,6 @@ video {
 .border-b-blueButtonPeterfell {
   --tw-border-opacity: 1;
   border-bottom-color: rgb(122 153 172 / var(--tw-border-opacity));
-}
-
-.border-b-grayPeterfell {
-  --tw-border-opacity: 1;
-  border-bottom-color: rgb(121 122 123 / var(--tw-border-opacity));
 }
 
 .bg-black {
@@ -1224,10 +1225,6 @@ video {
   background-position: right;
 }
 
-.bg-no-repeat {
-  background-repeat: no-repeat;
-}
-
 .fill-white {
   fill: #fff;
 }
@@ -1259,6 +1256,10 @@ video {
 
 .p-5 {
   padding: 1.25rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
 }
 
 .p-8 {
@@ -1720,8 +1721,16 @@ p {
     height: auto;
   }
 
+  .md\:w-1\/2 {
+    width: 50%;
+  }
+
   .md\:w-1\/6 {
     width: 16.666667%;
+  }
+
+  .md\:w-3\/4 {
+    width: 75%;
   }
 
   .md\:w-6\/12 {
@@ -1746,6 +1755,18 @@ p {
 
   .md\:gap-0 {
     gap: 0px;
+  }
+
+  .md\:space-x-8 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(2rem * var(--tw-space-x-reverse));
+    margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .md\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
 
   .md\:text-left {
@@ -1787,10 +1808,6 @@ p {
 
   .lg\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
-  .lg\:bg-right {
-    background-position: right;
   }
 
   .lg\:transition-all {
