@@ -903,6 +903,10 @@ video {
   max-width: 6rem;
 }
 
+.max-w-32 {
+  max-width: 8rem;
+}
+
 .max-w-4xl {
   max-width: 56rem;
 }
@@ -921,6 +925,10 @@ video {
 
 .max-w-full {
   max-width: 100%;
+}
+
+.max-w-md {
+  max-width: 28rem;
 }
 
 .max-w-screen-lg {
@@ -1286,8 +1294,9 @@ video {
   padding: 2rem;
 }
 
-.p-3 {
-  padding: 0.75rem;
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 .px-2 {
