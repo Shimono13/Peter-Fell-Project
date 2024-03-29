@@ -10,8 +10,138 @@
   </head>
   <body>
     <main>
+      <div id="buttonClose" class="flex justify-end p-12">
+        <button class="hover:brightness-200">
+          <img
+            src="./assets/image/png-button/Icon-Close-Blue-1.png"
+            alt="close-button"
+          />
+        </button>
+      </div>
+      <div id="buttonFlex" class="flex justify-center">
+        <div class="flex items-center gap-2 p-2">
+          <button
+            type="button"
+            class="flex bg-blueButtonPeterfell py-3 place-content-center min-w-56 cursor-not-allowed"
+          >
+            <p class="text-sm text-white">Step 1: <strong>Space</strong></p>
+          </button>
+          <img
+            src="https://www.peterfell.co.nz/wp-content/uploads/Icon-Chevron-Right-Blue-1.png"
+            alt="chevron"
+          />
+        </div>
+        <div class="flex items-center gap-2 p-2">
+          <button
+            type="button"
+            class="flex bg-blueButtonPeterfell py-3 place-content-center min-w-56 cursor-not-allowed"
+          >
+            <p class="text-sm text-white">Step 2: <strong>Colour</strong></p>
+          </button>
+          <img
+            src="https://www.peterfell.co.nz/wp-content/uploads/Icon-Chevron-Right-Blue-1.png"
+            alt="chevron"
+          />
+        </div>
+        <div class="flex items-center gap-2 p-2">
+          <button
+            type="button"
+            class="flex bg-blueButtonPeterfell py-3 place-content-center min-w-56 cursor-not-allowed"
+          >
+            <p class="text-sm text-white">Step 3: <strong>Texture</strong></p>
+          </button>
+          <img
+            src="https://www.peterfell.co.nz/wp-content/uploads/Icon-Chevron-Right-Blue-1.png"
+            alt="chevron"
+          />
+        </div>
+        <div class="flex items-center gap-2 p-2">
+          <button
+            type="button"
+            class="flex bg-blueButtonPeterfell py-3 place-content-center min-w-56 cursor-not-allowed"
+          >
+            <p class="text-sm text-white">Step 4: <strong>Patterns</strong></p>
+          </button>
+          <img
+            src="https://www.peterfell.co.nz/wp-content/uploads/Icon-Chevron-Right-Blue-1.png"
+            alt="chevron"
+          />
+        </div>
+        <div class="flex items-center gap-2 p-2">
+          <button
+            type="button"
+            class="flex bg-blueButtonPeterfell py-3 place-content-center min-w-56 cursor-not-allowed"
+          >
+            <p class="text-sm text-white">
+              Step 5: <strong>Protection</strong>
+            </p>
+          </button>
+          <img
+            src="https://www.peterfell.co.nz/wp-content/uploads/Icon-Chevron-Right-Blue-1.png"
+            alt="chevron"
+          />
+        </div>
+        <div class="flex items-center gap-2 p-2">
+          <button
+            type="button"
+            class="flex bg-blueButtonPeterfell py-3 place-content-center min-w-56 cursor-not-allowed"
+          >
+            <p class="text-sm text-white"><strong>Confirmation</strong></p>
+          </button>
+        </div>
+      </div>
+      <div id="buttonLateralRight" class="flex flex-row right-0 fixed mt-16">
+        <button
+          type="button"
+          class="bg-blueButtonPeterfell pl-10 pr-5 py-20 relative hover:bg-blueButtonPeterfell/90"
+        >
+          <div class="flex flex-row-reverse">
+            <div class="absolute right-2 bottom-40">
+              <img
+                class="w-4 h-8"
+                src="https://www.peterfell.co.nz/wp-content/uploads/Icon-Chevron-Right-White.png"
+                alt="chevron"
+              />
+            </div>
+
+            <div>
+              <p
+                class="text-xl text-white font-bold rotate-180 mr-2"
+                style="writing-mode: vertical-lr"
+              >
+                Choose your colour
+              </p>
+            </div>
+          </div>
+        </button>
+      </div>
+      <div id="buttonLateralLeft" class="flex flex-row left-0 fixed mt-16">
+        <button
+          type="button"
+          class="bg-blueButtonPeterfell pl-5 pr-10 py-20 relative hover:bg-blueButtonPeterfell/90"
+        >
+          <div class="">
+            <div class="absolute left-2 top-40">
+              <img
+                class="w-4 h-8 rotate-180"
+                src="https://www.peterfell.co.nz/wp-content/uploads/Icon-Chevron-Right-White.png"
+                alt="chevron"
+              />
+            </div>
+
+            <div>
+              <p
+                class="text-xl text-white font-bold ml-2"
+                style="writing-mode: vertical-rl"
+              >
+                Choose your colour
+              </p>
+            </div>
+          </div>
+        </button>
+      </div>
       <section id="space">
-        <div id="chooseYourSpace">
+        <div id="chooseYourSpace" class="ml-auto mr-auto">
           <div id="title">
             <h2 class="text-2xl md:text-6xl font-bold text-gray-900">
               Chouse your space
@@ -138,8 +268,10 @@
           </div>
         </div>
       </section>
-      <section id="colour" style="display: none"></section>
-      <section id="texture" style="display: none">
+      <section id="colour" style="display: none">
+        <p>Contenuto di Texture</p>
+      </section>
+      <section id="Texture" style="display: none">
         <p>Contenuto di Texture</p>
       </section>
       <section id="paterns" style="display: none">
