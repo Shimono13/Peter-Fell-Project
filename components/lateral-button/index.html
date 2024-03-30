@@ -6,21 +6,24 @@
     <link href="../../style.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="flex flex-row">
+    <div class="flex flex-row right-0 fixed">
       <button
         type="button"
-        class="inline-block ms.re bg-blueButtonPeterfell p-5 m-20 place-content-center w-64 h-24 top-80 hover:bg-blueButtonPeterfell/90 rotate-90"
+        class="bg-blueButtonPeterfell pl-6 pr-3 py-16 relative hover:bg-blueButtonPeterfell/90"
       >
-        <div class="mx-2.5 bg-center">
-          <img
-            class="rotate-90 ms-24 -scale-100"
-            src="https://www.peterfell.co.nz/wp-content/uploads/Icon-Chevron-Right-White.png"
-            alt="chevron"
-          />
+        <div class="flex flex-row-reverse">
+          <div class="flex items-center">
+            <img
+              class="w-4 h-8"
+              src="https://www.peterfell.co.nz/wp-content/uploads/Icon-Chevron-Right-White.png"
+              alt="chevron"
+            />
+          </div>
 
           <div>
             <p
-              class="inline-block text-xl text-white font-bold rotate-180 place-content-center md:size-auto"
+              class="text-xl text-white font-bold rotate-180 mr-2"
+              style="writing-mode: vertical-lr"
             >
               Choose your colour
             </p>
