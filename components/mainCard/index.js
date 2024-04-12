@@ -8,44 +8,44 @@ const commercialCard = document.getElementById("commercialCard");
 const publicCard = document.getElementById("publicCard");
 
 floorsCard.addEventListener("mouseover", () => {
-  mainMenu.classList.toggle("imgFloorsCard");
+  mainMenu.classList.add("imgFloorsCard");
 });
 floorsCard.addEventListener("mouseleave", () => {
   mainMenu.classList.remove("imgFloorsCard");
 });
 
 patiosCard.addEventListener("mouseover", () => {
-  mainMenu.classList.toggle("imgPatiosCard");
+  mainMenu.classList.add("imgPatiosCard");
 });
 patiosCard.addEventListener("mouseleave", () => {
   mainMenu.classList.remove("imgPatiosCard");
 });
 drivewaysCard.addEventListener("mouseover", () => {
-  mainMenu.classList.toggle("imgDrivewaysCard");
+  mainMenu.classList.add("imgDrivewaysCard");
 });
 drivewaysCard.addEventListener("mouseleave", () => {
   mainMenu.classList.remove("imgDrivewaysCard");
 });
 wallsCard.addEventListener("mouseover", () => {
-  mainMenu.classList.toggle("imgWallsCard");
+  mainMenu.classList.add("imgWallsCard");
 });
 wallsCard.addEventListener("mouseleave", () => {
   mainMenu.classList.remove("imgWallsCard");
 });
 poolCard.addEventListener("mouseover", () => {
-  mainMenu.classList.toggle("imgPoolCard");
+  mainMenu.classList.add("imgPoolCard");
 });
 poolCard.addEventListener("mouseleave", () => {
   mainMenu.classList.remove("imgPoolCard");
 });
 commercialCard.addEventListener("mouseover", () => {
-  mainMenu.classList.toggle("imgCommercialCard");
+  mainMenu.classList.add("imgCommercialCard");
 });
 commercialCard.addEventListener("mouseleave", () => {
   mainMenu.classList.remove("imgCommercialCard");
 });
 publicCard.addEventListener("mouseover", () => {
-  mainMenu.classList.toggle("imgPublicCard");
+  mainMenu.classList.add("imgPublicCard");
 });
 publicCard.addEventListener("mouseleave", () => {
   mainMenu.classList.remove("imgPublicCard");
