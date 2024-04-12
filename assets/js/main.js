@@ -3,7 +3,7 @@ class Configurator {
   choices;
 
   constructor() {
-    this.step = 1;
+    this.step = 0;
     this.choices = this.getChoicesValues();
   }
 
@@ -28,7 +28,7 @@ class Configurator {
   }
 
   render() {
-    this.renderPageviewByStep(this.step - 1);
+    this.renderPageviewByStep(this.step);
   }
 
   renderPageviewByStep(stepNumber) {
@@ -46,9 +46,13 @@ const $buttonLeft = document.getElementById("buttonLateralLeft");
 const $buttonRight = document.getElementById("buttonLateralRight");
 
 $buttonLeft.addEventListener("click", function () {
+  if (configurator.step === 0) return;
+
   configurator.prevStep();
 });
 
 $buttonRight.addEventListener("click", function () {
+  if (configurator.step === Object.keys(configurator.getChoicesValues()).length)
+    return;
   configurator.nextStep();
 });
