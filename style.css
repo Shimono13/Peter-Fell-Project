@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.3 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -211,6 +211,8 @@ textarea {
   /* 1 */
   line-height: inherit;
   /* 1 */
+  letter-spacing: inherit;
+  /* 1 */
   color: inherit;
   /* 1 */
   margin: 0;
@@ -234,9 +236,9 @@ select {
 */
 
 button,
-[type='button'],
-[type='reset'],
-[type='submit'] {
+input:where([type='button']),
+input:where([type='reset']),
+input:where([type='submit']) {
   -webkit-appearance: button;
   /* 1 */
   background-color: transparent;
@@ -492,6 +494,10 @@ video {
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
 }
 
 ::backdrop {
@@ -542,6 +548,10 @@ video {
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
 }
 
 .container {
@@ -687,6 +697,16 @@ video {
   margin-bottom: 1.25rem;
 }
 
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.mx-1 {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
 .-mb-2 {
   margin-bottom: -0.5rem;
 }
@@ -721,6 +741,10 @@ video {
 
 .ml-2 {
   margin-left: 0.5rem;
+}
+
+.ml-20 {
+  margin-left: 5rem;
 }
 
 .ml-4 {
@@ -801,18 +825,6 @@ video {
 
 .mt-auto {
   margin-top: auto;
-}
-
-.ml-10 {
-  margin-left: 2.5rem;
-}
-
-.ml-16 {
-  margin-left: 4rem;
-}
-
-.ml-20 {
-  margin-left: 5rem;
 }
 
 .block {
@@ -939,8 +951,16 @@ video {
   width: 100%;
 }
 
-.w-2\/4 {
-  width: 50%;
+.w-2\/12 {
+  width: 16.666667%;
+}
+
+.w-2 {
+  width: 0.5rem;
+}
+
+.w-\[15\%\] {
+  width: 15%;
 }
 
 .min-w-10 {
@@ -963,12 +983,12 @@ video {
   min-width: 2.25rem;
 }
 
-.min-w-48 {
-  min-width: 12rem;
+.min-w-52 {
+  min-width: 13rem;
 }
 
-.min-w-72 {
-  min-width: 18rem;
+.min-w-48 {
+  min-width: 12rem;
 }
 
 .max-w-24 {
@@ -1789,6 +1809,38 @@ p {
   font-weight: 300;
 }
 
+.imgBgMain {
+  background-image: url(/assets/image/websiteImage/mainBg_1.jpg);
+}
+
+.imgFloorsCard {
+  background-image: url(/assets/image/websiteImage/floors.jpg);
+}
+
+.imgPatiosCard {
+  background-image: url(/assets/image/websiteImage/patioCourtyards.jpg);
+}
+
+.imgDrivewaysCard {
+  background-image: url(/assets/image/websiteImage/drivewaysPaths.jpg);
+}
+
+.imgWallsCard {
+  background-image: url(/assets/image/websiteImage/walls.jpg);
+}
+
+.imgPoolCard {
+  background-image: url(/assets/image/websiteImage/poolSorrounds.jpg);
+}
+
+.imgCommercialCard {
+  background-image: url(/assets/image/websiteImage/commercial.jpg);
+}
+
+.imgPublicCard {
+  background-image: url(/assets/image/websiteImage/publicSpaces.jpg);
+}
+
 .hover\:border-gray-300:hover {
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
@@ -1979,10 +2031,6 @@ p {
 
   .md\:w-auto {
     width: auto;
-  }
-
-  .md\:w-2\/3 {
-    width: 66.666667%;
   }
 
   .md\:max-w-72 {

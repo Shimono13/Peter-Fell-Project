@@ -63,3 +63,27 @@ p {
   font-family: "heebo", sans-serif;
   font-weight: 300;
 }
+.imgBgMain {
+  background-image: url(/assets/image/websiteImage/mainBg_1.jpg);
+}
+.imgFloorsCard {
+  background-image: url(/assets/image/websiteImage/floors.jpg);
+}
+.imgPatiosCard {
+  background-image: url(/assets/image/websiteImage/patioCourtyards.jpg);
+}
+.imgDrivewaysCard {
+  background-image: url(/assets/image/websiteImage/drivewaysPaths.jpg);
+}
+.imgWallsCard {
+  background-image: url(/assets/image/websiteImage/walls.jpg);
+}
+.imgPoolCard {
+  background-image: url(/assets/image/websiteImage/poolSorrounds.jpg);
+}
+.imgCommercialCard {
+  background-image: url(/assets/image/websiteImage/commercial.jpg);
+}
+.imgPublicCard {
+  background-image: url(/assets/image/websiteImage/publicSpaces.jpg);
+}
