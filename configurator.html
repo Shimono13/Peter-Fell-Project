@@ -21,7 +21,7 @@
         <div class="flex items-center gap-3 p-1 w-2/12">
           <button
             type="button"
-            class="flex bg-blueButtonPeterfell py-2 place-content-center cursor-not-allowed w-full"
+            class="flex bg-blueButtonPeterfell py-2 place-content-center w-full button-step"
           >
             <p class="text-sm text-white">Step 1: <strong>Space</strong></p>
           </button>
@@ -33,7 +33,7 @@
         <div class="flex items-center gap-3 p-1 w-2/12">
           <button
             type="button"
-            class="flex bg-blueButtonPeterfell py-2 place-content-center cursor-not-allowed w-full"
+            class="flex bg-blueButtonPeterfell py-2 place-content-center w-full button-step"
           >
             <p class="text-sm text-white">Step 2: <strong>Colour</strong></p>
           </button>
@@ -45,7 +45,7 @@
         <div class="flex items-center gap-3 p-1 w-2/12">
           <button
             type="button"
-            class="flex bg-blueButtonPeterfell py-2 place-content-center cursor-not-allowed w-full"
+            class="flex bg-blueButtonPeterfell py-2 place-content-center w-full button-step"
           >
             <p class="text-sm text-white">Step 3: <strong>Texture</strong></p>
           </button>
@@ -57,7 +57,7 @@
         <div class="flex items-center gap-3 p-1 w-2/12">
           <button
             type="button"
-            class="flex bg-blueButtonPeterfell py-2 place-content-center cursor-not-allowed w-full"
+            class="flex bg-blueButtonPeterfell py-2 place-content-center w-full button-step"
           >
             <p class="text-sm text-white">Step 4: <strong>Patterns</strong></p>
           </button>
@@ -69,7 +69,7 @@
         <div class="flex items-center gap-3 p-1 w-2/12">
           <button
             type="button"
-            class="flex bg-blueButtonPeterfell py-2 place-content-center cursor-not-allowed w-full"
+            class="flex bg-blueButtonPeterfell py-2 place-content-center w-full button-step"
           >
             <p class="text-sm text-white">
               Step 5: <strong>Protection</strong>
@@ -83,7 +83,7 @@
         <div class="flex items-center gap-3 p-1 w-[15%]">
           <button
             type="button"
-            class="flex bg-blueButtonPeterfell py-2 place-content-center cursor-not-allowed w-full"
+            class="flex bg-blueButtonPeterfell py-2 place-content-center w-full button-step"
           >
             <p class="text-sm text-white"><strong>Confirmation</strong></p>
           </button>
@@ -1557,124 +1557,129 @@
         class="ml-auto mr-auto w-10/12 step"
         style="display: none"
       >
-       <div>
+        <div>
           <div>
-          <h1 class="text-6xl">Confirm your design.</h1>
-          <div class="flex flex-col">
-            <div class="py-10 w-3/4">
-              <p class="text-2xl mb-5 text-grayTextPeterfell">
-               Almost done.
-              </p>
-              <p class="text-l text-grayTextPeterfell">
-                You’ve chosen a colour, a texture, a pattern, and protection for your space.  Fill out the form below and we’ll send you actual concrete samples of the colours you’ve chosen. If you like, we’ll also email this report to you, or your architect, your contractor, builder, or interior designer. It’ll help give them an indication of what you want to achieve in your space. We recommend you meet with them and discuss the details using this as a starting point.
-              </p>
+            <h1 class="text-6xl">Confirm your design.</h1>
+            <div class="flex flex-col">
+              <div class="py-10 w-3/4">
+                <p class="text-2xl mb-5 text-grayTextPeterfell">Almost done.</p>
+                <p class="text-l text-grayTextPeterfell">
+                  You’ve chosen a colour, a texture, a pattern, and protection
+                  for your space. Fill out the form below and we’ll send you
+                  actual concrete samples of the colours you’ve chosen. If you
+                  like, we’ll also email this report to you, or your architect,
+                  your contractor, builder, or interior designer. It’ll help
+                  give them an indication of what you want to achieve in your
+                  space. We recommend you meet with them and discuss the details
+                  using this as a starting point.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div id="choiceResults"></div>
-      <form method="post" class="max-w-80 ml-auto">
-        <div class="flex flex-col gap-4 rounded-lg ">
-          <div><h3>Your Details:</h3></div>
-          <div>
-            <input
-              class="border border-solid border-black w-full h-10 pl-2"
-              type="text"
-              alt="Nome"
-              placeholder="Your Name *"
-            />
-          </div>
-          <div>
-            <input
-              class="border border-solid border-black w-full h-10 pl-2"
-              type="tel"
-              alt="tel"
-              placeholder="Your Phone *"
-            />
-          </div>
-          <div>
-            <input
-              class="border border-solid border-black w-full h-10 pl-2"
-              type="email"
-              alt="email"
-              placeholder="Your Email *"
-            />
-          </div>
-        </div>
-        <div class="flex flex-col gap-4 rounded-lg mt-2">
-          <div><h3>Send samples to:</h3></div>
-          <div>
-            <input
-              class="border border-solid border-black w-full h-10 pl-2"
-              type="text"
-              alt="houseNumberAndStreet"
-              placeholder="House number and street name *"
-            />
-          </div>
-          <div>
-            <input
-              class="border border-solid border-black w-full h-10 pl-2"
-              type="text"
-              alt="OptionInput"
-              placeholder="Apartment, suite, unit, etc. (optional)"
-            />
-          </div>
-          <div class="flex gap-1">
-            <div>
+          <div id="choiceResults"></div>
+          <form method="post" class="max-w-80 ml-auto">
+            <div class="flex flex-col gap-4 rounded-lg">
+              <div><h3>Your Details:</h3></div>
+              <div>
+                <input
+                  class="border border-solid border-black w-full h-10 pl-2"
+                  type="text"
+                  alt="Nome"
+                  placeholder="Your Name *"
+                />
+              </div>
+              <div>
+                <input
+                  class="border border-solid border-black w-full h-10 pl-2"
+                  type="tel"
+                  alt="tel"
+                  placeholder="Your Phone *"
+                />
+              </div>
+              <div>
+                <input
+                  class="border border-solid border-black w-full h-10 pl-2"
+                  type="email"
+                  alt="email"
+                  placeholder="Your Email *"
+                />
+              </div>
+            </div>
+            <div class="flex flex-col gap-4 rounded-lg mt-2">
+              <div><h3>Send samples to:</h3></div>
+              <div>
+                <input
+                  class="border border-solid border-black w-full h-10 pl-2"
+                  type="text"
+                  alt="houseNumberAndStreet"
+                  placeholder="House number and street name *"
+                />
+              </div>
+              <div>
+                <input
+                  class="border border-solid border-black w-full h-10 pl-2"
+                  type="text"
+                  alt="OptionInput"
+                  placeholder="Apartment, suite, unit, etc. (optional)"
+                />
+              </div>
+              <div class="flex gap-1">
+                <div>
+                  <input
+                    class="border border-solid border-black w-full h-10 pl-2"
+                    type="text"
+                    alt="Town"
+                    placeholder="Tow/City *"
+                  />
+                </div>
+                <div>
+                  <input
+                    class="border border-solid border-black w-full h-10 pl-2"
+                    type="text"
+                    alt="Region"
+                    placeholder="Region *"
+                  />
+                </div>
+                <div>
+                  <input
+                    class="border border-solid border-black w-full h-10 pl-2"
+                    type="text"
+                    alt="Postcode"
+                    placeholder="Postcode *"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col gap-4 rounded-lg mt-2">
+              <div><h3>Email this report to:</h3></div>
               <input
                 class="border border-solid border-black w-full h-10 pl-2"
-                type="text"
-                alt="Town"
-                placeholder="Tow/City *"
+                type="name"
+                alt="name"
+                placeholder="Name *"
               />
-            </div>
-            <div>
               <input
                 class="border border-solid border-black w-full h-10 pl-2"
-                type="text"
-                alt="Region"
-                placeholder="Region *"
+                type="email"
+                alt="email"
+                placeholder="Email *"
               />
+              <textarea
+                class="border border-solid border-black w-full h-24 pl-2"
+                placeholder="Message *"
+              ></textarea>
+              <div>
+                <button
+                  type="button"
+                  class="bg-bluePeterfell px-8 py-4 place-content-center text-white font-bold"
+                >
+                  Send
+                </button>
+              </div>
             </div>
-            <div>
-              <input
-                class="border border-solid border-black w-full h-10 pl-2"
-                type="text"
-                alt="Postcode"
-                placeholder="Postcode *"
-              />
-            </div>
-          </div>
+          </form>
         </div>
-        <div class="flex flex-col gap-4 rounded-lg mt-2">
-          <div><h3>Email this report to:</h3></div>
-          <input
-            class="border border-solid border-black w-full h-10 pl-2"
-            type="name"
-            alt="name"
-            placeholder="Name *"
-          />
-          <input
-            class="border border-solid border-black w-full h-10 pl-2"
-            type="email"
-            alt="email"
-            placeholder="Email *"
-          />
-          <textarea
-            class="border border-solid border-black w-full h-24 pl-2"
-            placeholder="Message *"
-          ></textarea>
-          <div>
-            <button
-              type="button"
-              class="bg-bluePeterfell px-8 py-4 place-content-center text-white font-bold"
-            >
-              Send
-            </button>
-          </div>
-        </div>
-      </form>
-    </div>
-    </section>
+      </section>
     </main>
     <script src="assets/js/main.js" type="text/javascript"></script>
   </body>

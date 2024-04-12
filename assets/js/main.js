@@ -28,9 +28,29 @@ class Configurator {
   }
 
   render() {
+    this.updateNavByStep(this.step);
     this.renderPageviewByStep(this.step);
   }
-
+  updateNavByStep(stepNumber) {
+    this.resetAllNavButtons();
+    this.enableButtonByStep(stepNumber);
+  }
+  resetAllNavButtons() {
+    const $buttonSteps = document.querySelectorAll(".button-step");
+    $buttonSteps.forEach((el) => {
+      el.style.opacity = "0.2";
+      el.style.cursor = "not-allowed";
+      el.disabled = true;
+    });
+  }
+  enableButtonByStep(stepNumber) {
+    for (let i = 0; i <= stepNumber; i++) {
+      const currentStep = document.querySelectorAll(".button-step")[i];
+      currentStep.style.opacity = "1";
+      currentStep.style.cursor = "pointer";
+      currentStep.disabled = false;
+    }
+  }
   renderPageviewByStep(stepNumber) {
     const $step = document.querySelectorAll(".step");
     $step.forEach((el) => (el.style.display = "none"));
