@@ -87,3 +87,6 @@ p {
 .imgPublicCard {
   background-image: url(/assets/image/websiteImage/publicSpaces.jpg);
 }
+.selected {
+  border: 1px solid #333;
+}

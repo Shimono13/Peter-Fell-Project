@@ -5,6 +5,8 @@ class Configurator {
   constructor() {
     this.step = 0;
     this.choices = this.getChoicesValues();
+    this.buttonLeft = document.getElementById("buttonLateralLeft");
+    this.buttonRight = document.getElementById("buttonLateralRight");
   }
 
   getChoicesValues() {
@@ -30,7 +32,54 @@ class Configurator {
   render() {
     this.updateNavByStep(this.step);
     this.renderPageviewByStep(this.step);
+    this.renderButtonsByStep(this.step);
+    if (this.step === 5) {
+      this.renderConfirmation();
+    }
   }
+
+  renderConfirmation() {
+    document.getElementById("choiceResults").innerHTML = "";
+    for (const choice in this.choices) {
+      document
+        .getElementById("choiceResults")
+        .appendChild(this.choices[choice]);
+    }
+  }
+
+  attachEvents() {
+    const choices = document.querySelectorAll(".choice");
+    choices.forEach((el) => {
+      el.addEventListener("click", () => {
+        choices.forEach((el) => el.classList.remove("selected"));
+        const currentStepName = el.closest("section").getAttribute("id");
+        this.choices[currentStepName] = el;
+        el.classList.add("selected");
+      });
+    });
+  }
+
+  renderButtonsByStep(step) {
+    this.buttonLeft.classList.add("hidden");
+    this.buttonRight.classList.add("hidden");
+    if (step < 5) this.buttonRight.classList.remove("hidden");
+    if (step > 0) this.buttonLeft.classList.remove("hidden");
+    const prevStepText =
+      document
+        .querySelectorAll(".button-step")
+        [step - 1]?.querySelector("strong").innerText || "";
+    const nextStepText =
+      document
+        .querySelectorAll(".button-step")
+        [step + 1]?.querySelector("strong").innerText || "";
+    this.buttonLeft.querySelector("p").innerText =
+      "Choose your " + prevStepText;
+    this.buttonRight.querySelector("p").innerText =
+      nextStepText === "Confirmation"
+        ? nextStepText
+        : "Choose your " + nextStepText;
+  }
+
   updateNavByStep(stepNumber) {
     this.resetAllNavButtons();
     this.enableButtonByStep(stepNumber);
@@ -61,6 +110,7 @@ class Configurator {
 const configurator = new Configurator();
 
 configurator.render();
+configurator.attachEvents();
 
 const $buttonLeft = document.getElementById("buttonLateralLeft");
 const $buttonRight = document.getElementById("buttonLateralRight");
