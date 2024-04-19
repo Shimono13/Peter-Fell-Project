@@ -88,5 +88,6 @@ p {
   background-image: url(/assets/image/websiteImage/publicSpaces.jpg);
 }
 .selected {
-  border: 1px solid #333;
+  border: 1px solid rgb(212 212 216);
+  background-color: beige;
 }

@@ -67,11 +67,13 @@ class Configurator {
     const prevStepText =
       document
         .querySelectorAll(".button-step")
-        [step - 1]?.querySelector("strong").innerText || "";
+        [step - 1]?.querySelector("strong")
+        .innerText.toLocaleLowerCase() || "";
     const nextStepText =
       document
         .querySelectorAll(".button-step")
-        [step + 1]?.querySelector("strong").innerText || "";
+        [step + 1]?.querySelector("strong")
+        .innerText.toLocaleLowerCase() || "";
     this.buttonLeft.querySelector("p").innerText =
       "Choose your " + prevStepText;
     this.buttonRight.querySelector("p").innerText =
