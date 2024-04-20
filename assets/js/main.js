@@ -39,10 +39,25 @@ class Configurator {
   }
 
   renderConfirmation() {
-    document.getElementById("choiceResults").innerHTML = "";
+    document.getElementById(
+      "choiceResults-space"
+    ).innerHTML = `<p class="text-3xl title p-2">Space</p>`;
+    document.getElementById(
+      "choiceResults-colour"
+    ).innerHTML = `<p class="text-3xl title p-2">Colour</p>`;
+    document.getElementById(
+      "choiceResults-texture"
+    ).innerHTML = `<p class="text-3xl title p-2">Texture</p>`;
+    document.getElementById(
+      "choiceResults-patterns"
+    ).innerHTML = `<p class="text-3xl title p-2">Pattern</p>`;
+    document.getElementById(
+      "choiceResults-protection"
+    ).innerHTML = `<p class="text-3xl title p-2">Protection</p>`;
     for (const choice in this.choices) {
       document
-        .getElementById("choiceResults")
+        .getElementById(`choiceResults-${[choice]}`)
+
         .appendChild(this.choices[choice]);
     }
   }
