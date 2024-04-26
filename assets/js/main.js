@@ -57,7 +57,6 @@ class Configurator {
     for (const choice in this.choices) {
       document
         .getElementById(`choiceResults-${[choice]}`)
-
         .appendChild(this.choices[choice]);
     }
   }
@@ -68,7 +67,8 @@ class Configurator {
       el.addEventListener("click", () => {
         choices.forEach((el) => el.classList.remove("selected"));
         const currentStepName = el.closest("section").getAttribute("id");
-        this.choices[currentStepName] = el;
+        const elSelected = el.cloneNode(true);
+        this.choices[currentStepName] = elSelected;
         el.classList.add("selected");
       });
     });
