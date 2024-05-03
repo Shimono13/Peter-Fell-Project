@@ -36,9 +36,13 @@ class Configurator {
     if (this.step === 5) {
       this.renderConfirmation();
     }
-    const currentStepName = document.querySelectorAll("section")[this.step];
-    if (!this.choices[currentStepName]) {
+    const currentStepName = document
+      .querySelectorAll("section")
+      [this.step].getAttribute("id");
+    if (typeof this.choices[currentStepName].outerHTML === "undefined") {
       this.disableNextButton();
+    } else {
+      this.enableNextButton();
     }
   }
 
