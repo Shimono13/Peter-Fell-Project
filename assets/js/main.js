@@ -36,6 +36,10 @@ class Configurator {
     if (this.step === 5) {
       this.renderConfirmation();
     }
+    const currentStepName = document.querySelectorAll("section")[this.step];
+    if (!this.choices[currentStepName]) {
+      this.disableNextButton();
+    }
   }
 
   renderConfirmation() {
@@ -59,17 +63,28 @@ class Configurator {
         .getElementById(`choiceResults-${[choice]}`)
         .appendChild(this.choices[choice]);
     }
+    const elementHovered = document.querySelectorAll(
+      "#confirmation .hover\\:border-gray-300"
+    );
+    elementHovered.forEach((el) => {
+      el.classList.remove("hover:border-gray-300", "cursor-pointer");
+    });
   }
 
   attachEvents() {
     const choices = document.querySelectorAll(".choice");
     choices.forEach((el) => {
       el.addEventListener("click", () => {
-        choices.forEach((el) => el.classList.remove("selected"));
         const currentStepName = el.closest("section").getAttribute("id");
+        const currentChoices = document.querySelectorAll(
+          "#" + currentStepName + " .choice"
+        );
+        currentChoices.forEach((el) => el.classList.remove("selected"));
         const elSelected = el.cloneNode(true);
         this.choices[currentStepName] = elSelected;
         el.classList.add("selected");
+
+        this.enableNextButton();
       });
     });
   }
@@ -96,6 +111,18 @@ class Configurator {
         ? nextStepText
         : "Choose your " + nextStepText;
   }
+  disableNextButton() {
+    this.buttonRight.style.opacity = "0.2";
+    this.buttonRight.style.cursor = "not-allowed";
+    this.buttonRight.style.pointerEvents = "none";
+    this.buttonRight.disabled = true;
+  }
+  enableNextButton() {
+    this.buttonRight.style.opacity = "1";
+    this.buttonRight.style.cursor = "pointer";
+    this.buttonRight.style.pointerEvents = "inherit";
+    this.buttonRight.disabled = false;
+  }
 
   updateNavByStep(stepNumber) {
     this.resetAllNavButtons();
@@ -117,6 +144,7 @@ class Configurator {
       currentStep.disabled = false;
     }
   }
+
   renderPageviewByStep(stepNumber) {
     const $step = document.querySelectorAll(".step");
     $step.forEach((el) => (el.style.display = "none"));
