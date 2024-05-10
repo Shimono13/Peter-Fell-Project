@@ -64,28 +64,28 @@ p {
   font-weight: 300;
 }
 .imgBgMain {
-  background-image: url(./assets/image/websiteImage/mainBg_1.jpg);
+  background-image: url(/assets/image/websiteImage/mainBg_1.jpg);
 }
 .imgFloorsCard {
-  background-image: url(./assets/image/websiteImage/floors.jpg);
+  background-image: url(/assets/image/websiteImage/floors.jpg);
 }
 .imgPatiosCard {
-  background-image: url(./assets/image/websiteImage/patioCourtyards.jpg);
+  background-image: url(/assets/image/websiteImage/patioCourtyards.jpg);
 }
 .imgDrivewaysCard {
-  background-image: url(./assets/image/websiteImage/drivewaysPaths.jpg);
+  background-image: url(/assets/image/websiteImage/drivewaysPaths.jpg);
 }
 .imgWallsCard {
-  background-image: url(./assets/image/websiteImage/walls.jpg);
+  background-image: url(/assets/image/websiteImage/walls.jpg);
 }
 .imgPoolCard {
-  background-image: url(./assets/image/websiteImage/poolSorrounds.jpg);
+  background-image: url(/assets/image/websiteImage/poolSorrounds.jpg);
 }
 .imgCommercialCard {
-  background-image: url(./assets/image/websiteImage/commercial.jpg);
+  background-image: url(/assets/image/websiteImage/commercial.jpg);
 }
 .imgPublicCard {
-  background-image: url(./assets/image/websiteImage/publicSpaces.jpg);
+  background-image: url(/assets/image/websiteImage/publicSpaces.jpg);
 }
 .selected {
   border: 1px solid rgb(212 212 216);
