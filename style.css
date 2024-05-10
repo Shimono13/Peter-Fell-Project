@@ -889,10 +889,6 @@ video {
   height: 100%;
 }
 
-.min-h-52 {
-  min-height: 13rem;
-}
-
 .min-h-96 {
   min-height: 24rem;
 }
@@ -1808,35 +1804,35 @@ p {
 }
 
 .imgBgMain {
-  background-image: url(/assets/image/websiteImage/mainBg_1.jpg);
+  background-image: url(./assets/image/websiteImage/mainBg_1.jpg);
 }
 
 .imgFloorsCard {
-  background-image: url(/assets/image/websiteImage/floors.jpg);
+  background-image: url(./assets/image/websiteImage/floors.jpg);
 }
 
 .imgPatiosCard {
-  background-image: url(/assets/image/websiteImage/patioCourtyards.jpg);
+  background-image: url(./assets/image/websiteImage/patioCourtyards.jpg);
 }
 
 .imgDrivewaysCard {
-  background-image: url(/assets/image/websiteImage/drivewaysPaths.jpg);
+  background-image: url(./assets/image/websiteImage/drivewaysPaths.jpg);
 }
 
 .imgWallsCard {
-  background-image: url(/assets/image/websiteImage/walls.jpg);
+  background-image: url(./assets/image/websiteImage/walls.jpg);
 }
 
 .imgPoolCard {
-  background-image: url(/assets/image/websiteImage/poolSorrounds.jpg);
+  background-image: url(./assets/image/websiteImage/poolSorrounds.jpg);
 }
 
 .imgCommercialCard {
-  background-image: url(/assets/image/websiteImage/commercial.jpg);
+  background-image: url(./assets/image/websiteImage/commercial.jpg);
 }
 
 .imgPublicCard {
-  background-image: url(/assets/image/websiteImage/publicSpaces.jpg);
+  background-image: url(./assets/image/websiteImage/publicSpaces.jpg);
 }
 
 .selected {
@@ -1988,10 +1984,6 @@ p {
     height: auto;
   }
 
-  .md\:min-h-96 {
-    min-height: 24rem;
-  }
-
   .md\:w-1\/2 {
     width: 50%;
   }
@@ -2058,10 +2050,6 @@ p {
 
   .md\:justify-start {
     justify-content: flex-start;
-  }
-
-  .md\:justify-center {
-    justify-content: center;
   }
 
   .md\:gap-0 {
