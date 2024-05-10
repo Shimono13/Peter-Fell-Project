@@ -737,6 +737,10 @@ video {
   margin-bottom: 1.25rem;
 }
 
+.ml-16 {
+  margin-left: 4rem;
+}
+
 .ml-2 {
   margin-left: 0.5rem;
 }
@@ -755,6 +759,10 @@ video {
 
 .ml-auto {
   margin-left: auto;
+}
+
+.mr-1 {
+  margin-right: 0.25rem;
 }
 
 .mr-2 {
@@ -823,14 +831,6 @@ video {
 
 .mt-auto {
   margin-top: auto;
-}
-
-.mr-1 {
-  margin-right: 0.25rem;
-}
-
-.ml-16 {
-  margin-left: 4rem;
 }
 
 .block {
@@ -1873,12 +1873,12 @@ p {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.hover\:hover\:opacity-70:hover:hover {
-  opacity: 0.7;
-}
-
 .hover\:opacity-0:hover {
   opacity: 0;
+}
+
+.hover\:opacity-70:hover {
+  opacity: 0.7;
 }
 
 .hover\:brightness-0:hover {
